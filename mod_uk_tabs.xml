@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<extension type="module" version="3.6" method="upgrade" client="site">
+    <name>UIkit 3 Tabs</name>
+	<author>Aleksey A. Morozov (AlekVolsk)</author>
+	<copyright>(C) 2018 Aleksey A. Morozov. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see http://www.gnu.org/licenses/gpl-3.0.txt</license>
+	<version>1.1.0</version>
+	<creationDate>July 2018</creationDate>
+    <description><![CDATA[MOD_UK_TABS_XML_DESCRIPTION]]></description>
+    <files>
+        <filename module="mod_uk_tabs">mod_uk_tabs.php</filename>
+        <folder>forms</folder>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB/en-GB.mod_uk_tabs.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_uk_tabs.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.mod_uk_tabs.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.mod_uk_tabs.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            
+            <fieldset name="basic">
+                <field name="tabs_class" type="text" label="MOD_UK_TABS_CLASS" class="input-xlarge" />
+                <field name="title_class" type="text" label="MOD_UK_TABS_TITLE_CLASS" class="input-xlarge" />
+                <field name="title_type" type="list" label="MOD_UK_TABS_TITLE_TYPE" description="MOD_UK_TABS_TITLE_TYPE_DESC" default="1" class="input-xlarge">
+                    <option value="1">MOD_UK_TABS_TITLE_TYPE_1</option>
+                    <option value="2">MOD_UK_TABS_TITLE_TYPE_2</option>
+                    <option value="3">MOD_UK_TABS_TITLE_TYPE_3</option>
+                </field>
+                <field name="title_img_width" type="text" label="MOD_UK_TABS_TITLE_IMG_WIDTH" default="20" class="input-small" />
+                <field name="position" type="list" label="MOD_UK_TABS_POSITION" default="top" class="input-xlarge">
+                    <option value="top">MOD_UK_TABS_POSITION_TOP</option>
+                    <option value="bottom">MOD_UK_TABS_POSITION_BOTTOM</option>
+                    <option value="left">MOD_UK_TABS_POSITION_LEFT</option>
+                    <option value="right">MOD_UK_TABS_POSITION_RIGHT</option>
+                </field>
+                <field name="align" type="list" label="MOD_UK_TABS_ALIGNMENT" default="left" class="input-xlarge">
+                    <option value="left">MOD_UK_TABS_ALIGN_LEFT</option>
+                    <option value="right">MOD_UK_TABS_ALIGN_RIGHT</option>
+                    <option value="center">MOD_UK_TABS_ALIGN_CENTER</option>
+                    <option value="justify">MOD_UK_TABS_ALIGN_JUSTYFY</option>
+                    <option value="width">MOD_UK_TABS_ALIGN_WIDTH</option>
+                </field>
+                <field name="active" type="text" label="MOD_UK_TABS_ACTIVE" description="MOD_UK_TABS_ACTIVE_DESC" class="input-small" />
+                <field name="content_class" type="text" label="MOD_UK_TABS_CONTENT_CLASS" class="input-xlarge" />
+                <field name="swiping" type="radio" label="MOD_UK_TABS_SWIPING" description="MOD_UK_TABS_SWIPING_DESC" default="1" class="btn-group">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="media" type="text" label="MOD_UK_TABS_MEDIA" description="MOD_UK_TABS_MEDIA_DESC" default="@s" class="input-xlarge" />
+            </fieldset>
+            
+            <fieldset name="els">
+                <field name="items" type="subform" label="COM_MODULES_ELS_FIELDSET_LABEL" formsource="/modules/mod_uk_tabs/forms/form.xml" multiple="true" min="0" layout="joomla.form.field.subform.repeatable" />
+            </fieldset>
+            
+            <fieldset name="advanced">
+                <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+                <field name="cache" type="list" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" default="1">
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                </field>
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>
