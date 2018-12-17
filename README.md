@@ -1,7 +1,5 @@
 # UIkit 3 Tabs
 
-![Github Releases](https://img.shields.io/github/downloads/AlekVolsk/mod_uk_tabs/latest/total.svg)
-
 ### EN:
 
 Tabs of content, based on the UIkit 3 framework. Module for Joomla! 3
