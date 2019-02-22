@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<extension type="module" version="3.6" method="upgrade" client="site">
+<extension type="module" version="3.7" method="upgrade" client="site">
     <name>UIkit 3 Tabs</name>
 	<author>Aleksey A. Morozov (AlekVolsk)</author>
-	<copyright>(C) 2018 Aleksey A. Morozov. All rights reserved.</copyright>
+	<copyright>(C) 2019 Aleksey A. Morozov. All rights reserved.</copyright>
 	<license>GNU General Public License version 3 or later; see http://www.gnu.org/licenses/gpl-3.0.txt</license>
-	<version>1.1.0</version>
-	<creationDate>July 2018</creationDate>
+	<version>1.2.0</version>
+	<creationDate>February 2019</creationDate>
     <description><![CDATA[MOD_UK_TABS_XML_DESCRIPTION]]></description>
     <files>
         <filename module="mod_uk_tabs">mod_uk_tabs.php</filename>
