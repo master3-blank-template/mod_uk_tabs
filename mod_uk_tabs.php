@@ -1,10 +1,11 @@
 <?php defined('_JEXEC') or die;
 /*
  * @package     mod_uk_tabs
- * @copyright   Copyright (C) 2019 Aleksey A. Morozov (AlekVolsk). All rights reserved.
+ * @copyright   Copyright (C) Aleksey A. Morozov (AlekVolsk). All rights reserved.
  * @license     GNU General Public License version 3 or later; see http://www.gnu.org/licenses/gpl-3.0.txt
  */
 
+use Joomla\CMS\Factory;
 use Joomla\CMS\Helper\ModuleHelper;
 
 $vars = [
@@ -57,5 +58,6 @@ $title_class = trim($title_class) ? ' ' . trim($title_class) : '';
 $content_class = trim($content_class) ? ' ' . trim($content_class) : '';
 
 if ($items) {
+    Factory::getDocument()->addScript('/modules/mod_uk_tabs/assets/moduktabs.js');
     require(ModuleHelper::getLayoutPath('mod_uk_tabs', $params->get('layout', 'default')));
 }
